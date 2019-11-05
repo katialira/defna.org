@@ -1,0 +1,22 @@
+# Site settings
+title: Django Events Foundation North America
+email: hello@defna.org
+description: > # Writer Theme is a responsive template
+ Django Events Foundation North America (DEFNA)
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+enable_retina: false
+permalink: :title
+nav_list:
+  Home : ['Home', '/', 'fa-home']
+  About : ['About', '/about', 'fa-user']
+  Events : ['Events', '/events', 'fa-calendar']
+  Grants : ['Donate', '/donate', 'fa-group']
+  Donate : ['Grants', '/grants', 'fa-heart']
+  Contact : ['Contact', '/contact', 'fa-comment']
+single_footer: '<p>Django Events Foundation North America (DEFNA) © 2015 - 2019</p>'
+footer_links:
+    About: ['Django Events Foundation North America (DEFNA) © 2015 - 2019', '/']
+
+# Build settings
+# markdown: kramdown
