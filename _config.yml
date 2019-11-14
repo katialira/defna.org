@@ -21,6 +21,7 @@ footer_links:
 collections:  # process the _data folder
   boardmembers:
   pastmembers:
+  events:
 
 # Build settings
 # markdown: kramdown
