@@ -4002,6 +4002,8 @@ blockquote { font-size: 24px; font-size: 2.4rem; padding: 0 20px; }
 
 @media (min-width: 992px) { .board-content p { font-size: 18px; font-size: 1.8rem; } }
 
+.board-content .right { float: right; }
+
 .single-content, .single-content-sidebar { padding: 30px 8%; }
 
 @media (min-width: 992px) { .single-content, .single-content-sidebar { padding: 30px 14% 70px; } }
