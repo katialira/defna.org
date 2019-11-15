@@ -3976,8 +3976,6 @@ hr.events-hr { margin: 10px auto 40px auto; }
 
 @media (min-width: 768px) { .meta { font-size: 16px; font-size: 1.6rem; } }
 
-@media (min-width: 992px) { .meta { margin-bottom: 20px; } }
-
 .meta .time { font-size: 23px; font-size: 2.3rem; float: right; }
 
 .meta .min { font-size: 13px; font-size: 1.3rem; float: right; }

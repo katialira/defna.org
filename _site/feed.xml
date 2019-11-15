@@ -6,278 +6,566 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 14 Nov 2019 09:43:55 -0600</pubDate>
-    <lastBuildDate>Thu, 14 Nov 2019 09:43:55 -0600</lastBuildDate>
+    <pubDate>Thu, 14 Nov 2019 22:35:00 -0600</pubDate>
+    <lastBuildDate>Thu, 14 Nov 2019 22:35:00 -0600</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
     
       <item>
-        <title>Supercharge Your Workflow With Grunt</title>
-        <description>&lt;p&gt;The Grunt ecosystem is huge and it’s growing every day. With literally hundreds of plugins to choose from, you can use Grunt to automate just about anything with a minimum of effort. If someone hasn’t already built what you need, authoring and publishing your own Grunt plugin to npm is a breeze. See how to &lt;a href=&quot;http://gruntjs.com/&quot;&gt;get started&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;In one word: automation. The less work you have to do when performing repetitive tasks like minification, compilation, unit testing, linting, etc, the easier your job becomes. After you’ve configured it through a Gruntfile, a task runner can do most of that mundane work for you—and your team—with basically zero effort.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;my-project-name&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;0.1.0&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;devDependencies&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;grunt&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;~0.4.5&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;grunt-contrib-jshint&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;~0.10.0&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;grunt-contrib-nodeunit&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;~0.4.1&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;grunt-contrib-uglify&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;~0.5.0&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;The easiest way to add Grunt and gruntplugins to an existing &lt;code class=&quot;highlighter-rouge&quot;&gt;package.json&lt;/code&gt; is with the command &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install &amp;lt;module&amp;gt; --save-dev&lt;/code&gt;. Not only will this install &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;module&amp;gt;&lt;/code&gt; locally, but it will automatically be added to the devDependencies section, using a tilde version range.&lt;/p&gt;
-
-&lt;p&gt;For example, this will install the latest version of Grunt in your project folder, adding it to your devDependencies:&lt;/p&gt;
-
-&lt;p&gt;Grunt&lt;/p&gt;
-</description>
-        <pubDate>Wed, 11 Feb 2015 02:50:28 -0600</pubDate>
-        <link>http://localhost:4000/supercharge-your-workflow-with-grunt</link>
-        <guid isPermaLink="true">http://localhost:4000/supercharge-your-workflow-with-grunt</guid>
-        
-        
-        <category>coding</category>
-        
-        <category>js</category>
-        
-      </item>
-    
-      <item>
-        <title>CSS with Superpowers</title>
-        <description>&lt;p&gt;Sass is completely compatible with all versions of CSS. We take this compatibility seriously, so that you can seamlessly use any available CSS libraries.&lt;/p&gt;
-
-&lt;p&gt;Sass boasts more features and abilities than any other CSS extension language out there. The Sass Core Team has worked endlessly to not only keep up, but stay ahead.&lt;/p&gt;
-
-&lt;h2 id=&quot;mature&quot;&gt;Mature&lt;/h2&gt;
-&lt;p&gt;Sass has been actively supported for about 8 years by its loving Core&lt;/p&gt;
-
-&lt;h2 id=&quot;team&quot;&gt;Team&lt;/h2&gt;
-&lt;p&gt;Over and over again, the industry is choosing Sass as the premier CSS extension language.&lt;/p&gt;
-
-&lt;h2 id=&quot;large-community&quot;&gt;Large Community&lt;/h2&gt;
-&lt;p&gt;Sass is actively supported and developed by a consortium of several tech companies and hundreds of developers.&lt;/p&gt;
-
-&lt;h2 id=&quot;frameworks&quot;&gt;Frameworks&lt;/h2&gt;
-&lt;p&gt;There are endless number of frameworks built with Sass. Compass, Bourbon, and Susy just to name a few.&lt;/p&gt;
-
-&lt;p&gt;Dreamcatcher cold-pressed American Apparel, post-ironic Carles Shoreditch craft beer Banksy PBR retro distillery before they sold out freegan asymmetrical kogi. Food truck Schlitz direct trade, deep v ethical yr sriracha mumblecore freegan. Tattooed occupy pork belly, letterpress typewriter cold-pressed viral swag farm-to-table flexitarian. +1 hashtag put a bird on it authentic. 3 wolf moon locavore Vice, normcore actually meggings leggings cornhole brunch. Four loko vinyl trust fund, Intelligentsia wolf Bushwick lo-fi sriracha. Deep v vegan forage selvage.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 11 Feb 2015 02:50:28 -0600</pubDate>
-        <link>http://localhost:4000/css-with-superpowers</link>
-        <guid isPermaLink="true">http://localhost:4000/css-with-superpowers</guid>
-        
-        
-        <category>coding</category>
-        
-        <category>css</category>
-        
-      </item>
-    
-      <item>
-        <title>10 Reasons to travel the world</title>
-        <description>&lt;p&gt;Ask yourself, why not? What is the number one reason you wouldn’t. If the reason you get back is fear, you should just do it.&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati doloribus, culpa, et suscipit praesentium incidunt, libero officiis ipsum fugiat odit aperiam commodi unde dignissimos veritatis accusamus molestias iste magni nobis?&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/img/post-assets/fire.jpg&quot; alt=&quot;Fire image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Kale chips bespoke church-key American Apparel flannel pickled. Mlkshk High Life Blue Bottle, leggings gastropub four dollar toast post-ironic fap American Apparel VHS. Cliche cold-pressed single-origin coffee mlkshk retro distillery. 3 wolf moon Tumblr selvage semiotics food truck. Intelligentsia Pitchfork meh sriracha chambray, fanny pack lomo irony fap pickled stumptown. Twee +1 artisan, cred ethical gluten-free 90’s four loko Odd Future cronut small batch organic. Seitan hashtag jean shorts art party messenger bag.&lt;/p&gt;
+        <title>Congratulations Jeff!</title>
+        <description>&lt;p&gt;Last May the Python Software Foundation released a call for Board Directors, DEFNA’s President Jeff Triplett was nominated by current PSF Board Member Trey Hunner with these words:&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Scenester Echo Park tilde&lt;/p&gt;
+  &lt;p&gt;I nominate Jeff Triplett for the PSF Board of Directors. Jeff is passionate about pushing Python spaces to new heights of inclusivity and sustainability. Jeff has given me an enormous amount of actionable feedback in regards to Python/Django community work since nearly the day I met him. Jeff has a tendency to give constructive feedback and to follow through with his words through action.&lt;/p&gt;
+
+  &lt;p&gt;Trey Hunner&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Locavore brunch kale chips vegan selvage High Life you probably haven’t heard of them before they sold out pork belly. Flexitarian organic wayfarers, cronut food truck bicycle rights drinking vinegar bespoke meditation mustache swag mumblecore semiotics locavore. Whatever kogi readymade, jean shorts pork belly chia distillery wayfarers. Art party single-origin coffee four dollar toast VHS, try-hard hoodie kogi normcore Neutra actually church-key flexitarian swag.&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 11 Feb 2015 02:50:28 -0600</pubDate>
-        <link>http://localhost:4000/ten-reasons-to-travel-the-world</link>
-        <guid isPermaLink="true">http://localhost:4000/ten-reasons-to-travel-the-world</guid>
-        
-        
-        <category>travel</category>
-        
-        <category>storytime</category>
-        
-      </item>
-    
-      <item>
-        <title>Why React JS Will Change the World</title>
-        <description>&lt;p&gt;React components implement a &lt;code class=&quot;highlighter-rouge&quot;&gt;render()&lt;/code&gt; method that takes input data and returns what to display. This example uses an XML-like syntax called JSX. Input data that is passed into the component can be accessed by &lt;code class=&quot;highlighter-rouge&quot;&gt;render()&lt;/code&gt; via &lt;code class=&quot;highlighter-rouge&quot;&gt;this.props&lt;/code&gt;.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;build/react.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;build/JSXTransformer.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;example&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/jsx&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;world&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/h1&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,
-&lt;/span&gt;        &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;example&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;want-commonjs&quot;&gt;Want CommonJS?&lt;/h2&gt;
-&lt;p&gt;If you want to use React with browserify, webpack, or another CommonJS-compatible module system, just use the react npm package. In addition, the jsx build tool can be integrated into most packaging systems (not just CommonJS) quite easily.&lt;/p&gt;
-
-&lt;h2 id=&quot;next-steps&quot;&gt;Next Steps&lt;/h2&gt;
-&lt;p&gt;Check out the tutorial and the other examples in the starter kit’s examples directory to learn more.&lt;/p&gt;
-
-&lt;p&gt;We also have a wiki where the community contributes with workflows, UI-components, routing, data management etc.&lt;/p&gt;
-
-&lt;p&gt;Good luck, and welcome!&lt;/p&gt;
-</description>
-        <pubDate>Tue, 10 Feb 2015 00:00:00 -0600</pubDate>
-        <link>http://localhost:4000/why-react-js-will-change-the-world</link>
-        <guid isPermaLink="true">http://localhost:4000/why-react-js-will-change-the-world</guid>
-        
-        
-        <category>coding</category>
-        
-        <category>js</category>
-        
-      </item>
-    
-      <item>
-        <title>Fake It Until You Make It</title>
-        <description>&lt;p&gt;Don’t listen to your critics, most people spend all day talking about what others are doing and no time doing anything themselves.&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam nihil eum cum quas! Consectetur aliquam molestias quos voluptatum recusandae accusantium eaque sed architecto esse. Ut obcaecati, porro numquam sed. Odio.&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quam provident accusamus vero autem culpa illum quo enim maiores eius error, sapiente inventore cum hic earum. Libero porro quisquam harum.&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in finibus diam, sit amet sollicitudin dui. Praesent erat dui, mattis sed elementum non, molestie et ipsum. Quisque fringilla vitae dolor a lacinia. Integer aliquam arcu non tortor egestas volutpat. Proin vitae pretium purus, a rhoncus sapien. Nam posuere rutrum lorem, eu sagittis ante scelerisque pretium. Morbi fermentum mauris a elit lacinia venenatis. Nunc ut iaculis nunc, sed faucibus nulla. Nunc at massa ut mi varius venenatis et id nibh. Sed molestie nibh sed risus mattis elementum. Ut iaculis, dolor sed consequat efficitur, nisi risus scelerisque dui, at bibendum velit nisi quis risus. Nunc gravida leo ut arcu tempus, et iaculis ex ullamcorper. Maecenas eget dolor diam. Suspendisse dapibus pulvinar tempus.&lt;/p&gt;
-
-&lt;p&gt;Vestibulum semper dui risus, ut vestibulum ex vestibulum in. Duis vel placerat augue. Morbi dapibus turpis nisi, eleifend hendrerit ligula congue non. Vestibulum felis velit, vulputate at metus ac, ullamcorper pharetra sapien. Praesent eget nibh scelerisque, scelerisque velit semper, ultrices velit. Nunc luctus quam ut condimentum sodales. Quisque eget eleifend nibh. Donec sit amet metus massa.&lt;/p&gt;
-
-&lt;p&gt;Quisque sagittis arcu quis mauris consectetur tempus. Etiam id erat pretium, rutrum quam ut, commodo lacus. Proin vitae condimentum odio. Morbi facilisis ligula vitae auctor pretium. Fusce lorem lectus, ultrices sit amet neque ut, condimentum bibendum libero. Mauris cursus neque eros, vel consectetur quam mollis nec. Mauris quis est nec elit euismod condimentum. Vestibulum imperdiet suscipit elit et scelerisque. Vivamus mollis sagittis ante.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 10 Feb 2015 00:00:00 -0600</pubDate>
-        <link>http://localhost:4000/fake-it-until-you-make-it</link>
-        <guid isPermaLink="true">http://localhost:4000/fake-it-until-you-make-it</guid>
-        
-        
-        <category>motivation</category>
-        
-      </item>
-    
-      <item>
-        <title>Its Not Always That Simple</title>
-        <description>&lt;p&gt;If you always do what you’ve always done, you’ll always get what you’ve always had.&lt;/p&gt;
+&lt;p&gt;After a few days of voting on June 25th it was announced that Jeff would become a Board Member for the PSF!&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Want shows up in what you say, expectation shows up in behaviour&lt;/p&gt;
+  &lt;p&gt;I have been in total shock and speechless today by this news.&lt;/p&gt;
+
+  &lt;p&gt;I’m incredibly honored and humbled by your votes and for trusting me to serve on the board of directors for the Python Software Foundation (@ThePSF).&lt;/p&gt;
+
+  &lt;p&gt;My timeline is full of ❤️. Thank you! 🎉✨ https://t.co/8i6yKUSsGS&lt;/p&gt;
+
+  &lt;p&gt;— Jeff Triplett @ #XOXOFest ✨👋 (@webology) June 26, 2018&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in finibus diam, sit amet sollicitudin dui. Praesent erat dui, mattis sed elementum non, molestie et ipsum. Quisque fringilla vitae dolor a lacinia. Integer aliquam arcu non tortor egestas volutpat. Proin vitae pretium purus, a rhoncus sapien. Nam posuere rutrum lorem, eu sagittis ante scelerisque pretium. Morbi fermentum mauris a elit lacinia venenatis. Nunc ut iaculis nunc, sed faucibus nulla. Nunc at massa ut mi varius venenatis et id nibh. Sed molestie nibh sed risus mattis elementum. Ut iaculis, dolor sed consequat efficitur, nisi risus scelerisque dui, at bibendum velit nisi quis risus. Nunc gravida leo ut arcu tempus, et iaculis ex ullamcorper. Maecenas eget dolor diam. Suspendisse dapibus pulvinar tempus.&lt;/p&gt;
-
-&lt;p&gt;Vestibulum semper dui risus, ut vestibulum ex vestibulum in. Duis vel placerat augue. Morbi dapibus turpis nisi, eleifend hendrerit ligula congue non. Vestibulum felis velit, vulputate at metus ac, ullamcorper pharetra sapien. Praesent eget nibh scelerisque, scelerisque velit semper, ultrices velit. Nunc luctus quam ut condimentum sodales. Quisque eget eleifend nibh. Donec sit amet metus massa.&lt;/p&gt;
-
-&lt;p&gt;Quisque sagittis arcu quis mauris consectetur tempus. Etiam id erat pretium, rutrum quam ut, commodo lacus. Proin vitae condimentum odio. Morbi facilisis ligula vitae auctor pretium. Fusce lorem lectus, ultrices sit amet neque ut, condimentum bibendum libero. Mauris cursus neque eros, vel consectetur quam mollis nec. Mauris quis est nec elit euismod condimentum. Vestibulum imperdiet suscipit elit et scelerisque. Vivamus mollis sagittis ante.&lt;/p&gt;
-
-&lt;p&gt;Aenean commodo, massa quis mattis lacinia, mi ipsum vestibulum nisi, ut tincidunt massa erat quis neque. Aliquam volutpat eu ligula a tincidunt. Suspendisse imperdiet, lacus vitae pretium imperdiet, nisi elit efficitur felis, id ullamcorper nulla dolor ac massa. In rutrum eget nisi et maximus. Nam consequat libero et feugiat lobortis. Donec sit amet felis faucibus, egestas enim id, condimentum justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed aliquam, nisl vel volutpat semper, mi lacus tempus ante, hendrerit consequat massa lorem at lacus. Phasellus vel felis scelerisque, consectetur arcu ac, euismod massa.&lt;/p&gt;
+&lt;p&gt;Congrats Jeff from all of us at DEFNA! We are sure you’ll do an amazing job.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 10 Feb 2015 00:00:00 -0600</pubDate>
-        <link>http://localhost:4000/its-not-always-that-simple</link>
-        <guid isPermaLink="true">http://localhost:4000/its-not-always-that-simple</guid>
+        <pubDate>Mon, 24 Sep 2018 03:50:28 -0500</pubDate>
+        <link>http://localhost:4000/congratulations-jeff</link>
+        <guid isPermaLink="true">http://localhost:4000/congratulations-jeff</guid>
         
-        
-        <category>motivation</category>
         
       </item>
     
       <item>
-        <title>Stop Thinking And Start Doing</title>
-        <description>&lt;p&gt;Get out of your head. Every good decision starts with a momment of action. What are you going to do today!&lt;/p&gt;
+        <title>Semester Grants Report</title>
+        <description>&lt;p&gt;At DEFNA we know that organizing great events is hard work, and we’d like to give you a little push by encouraging all event organizers in North America, no matter the size, to apply for our grants. The only thing you need to do is fill out &lt;a href=&quot;/grants&quot;&gt;this form&lt;/a&gt; and the Board will review and answer as soon as possible.&lt;/p&gt;
 
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in finibus diam, sit amet sollicitudin dui. Praesent erat dui, mattis sed elementum non, molestie et ipsum. Quisque fringilla vitae dolor a lacinia. Integer aliquam arcu non tortor egestas volutpat. Proin vitae pretium purus, a rhoncus sapien. Nam posuere rutrum lorem, eu sagittis ante scelerisque pretium. Morbi fermentum mauris a elit lacinia venenatis. Nunc ut iaculis nunc, sed faucibus nulla. Nunc at massa ut mi varius venenatis et id nibh. Sed molestie nibh sed risus mattis elementum. Ut iaculis, dolor sed consequat efficitur, nisi risus scelerisque dui, at bibendum velit nisi quis risus. Nunc gravida leo ut arcu tempus, et iaculis ex ullamcorper. Maecenas eget dolor diam. Suspendisse dapibus pulvinar tempus.&lt;/p&gt;
+&lt;p&gt;Here’s a recap of the grants given this year:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/img/post-assets/walk.jpg&quot; alt=&quot;walk&quot; /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;django-girls-omaha&quot;&gt;&lt;strong&gt;DJANGO GIRLS OMAHA&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;small&gt;February 17, 2018&lt;/small&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/img/post-assets/water.jpg&quot; alt=&quot;water&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Django Girls is a non-profit organization and a community that empowers and helps women to organize free, one-day programming workshops by providing tools, resources and support. During each event,  women build their first web application using HTML, CSS, Python and Django. You can read a detailed review of the event here.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/img/post-assets/woods.jpg&quot; alt=&quot;woods&quot; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id=&quot;pygotham&quot;&gt;&lt;strong&gt;PYGOTHAM&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;small&gt;October 5 &amp;amp; 6, 2018&lt;/small&gt;&lt;/p&gt;
 
-&lt;p&gt;Vestibulum semper dui risus, ut vestibulum ex vestibulum in. Duis vel placerat augue. Morbi dapibus turpis nisi, eleifend hendrerit ligula congue non. Vestibulum felis velit, vulputate at metus ac, ullamcorper pharetra sapien. Praesent eget nibh scelerisque, scelerisque velit semper, ultrices velit. Nunc luctus quam ut condimentum sodales. Quisque eget eleifend nibh. Donec sit amet metus massa.&lt;/p&gt;
+&lt;p&gt;PyGotham is a New York City based, eclectic, Py-centric conference covering many topics. PyGotham attracts developers of various backgrounds and skill levels from the New York metropolitan area and beyond. Activities include two full days of talks, lightning talk sessions, and a social event.  Register here.&lt;/p&gt;
 
-&lt;p&gt;Quisque sagittis arcu quis mauris consectetur tempus. Etiam id erat pretium, rutrum quam ut, commodo lacus. Proin vitae condimentum odio. Morbi facilisis ligula vitae auctor pretium. Fusce lorem lectus, ultrices sit amet neque ut, condimentum bibendum libero. Mauris cursus neque eros, vel consectetur quam mollis nec. Mauris quis est nec elit euismod condimentum. Vestibulum imperdiet suscipit elit et scelerisque. Vivamus mollis sagittis ante.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id=&quot;north-bay-python&quot;&gt;&lt;strong&gt;NORTH BAY PYTHON&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;A conference north of the Golden Gate, focused on community, collaboration, and all things Python. North Bay Python is a two-day, single-track Python conference held at the Mystic Theatre in Historic Downtown Petaluma, California, over the weekend of December 2 &amp;amp; 3, 2017.&lt;/p&gt;
 
-&lt;p&gt;Aenean commodo, massa quis mattis lacinia, mi ipsum vestibulum nisi, ut tincidunt massa erat quis neque. Aliquam volutpat eu ligula a tincidunt. Suspendisse imperdiet, lacus vitae pretium imperdiet, nisi elit efficitur felis, id ullamcorper nulla dolor ac massa. In rutrum eget nisi et maximus. Nam consequat libero et feugiat lobortis. Donec sit amet felis faucibus, egestas enim id, condimentum justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed aliquam, nisl vel volutpat semper, mi lacus tempus ante, hendrerit consequat massa lorem at lacus. Phasellus vel felis scelerisque, consectetur arcu ac, euismod massa.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id=&quot;pythonday-méxico&quot;&gt;&lt;strong&gt;PYTHONDAY MÉXICO&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;small&gt;November 30 &amp;amp; December 1, 2018&lt;/small&gt;&lt;/p&gt;
 
+&lt;p&gt;The second edition of the PythonDay at Mexico will be hosted in the city of Guadalajara. The event is completely free, there will be one day of workshops and one day dedicated to talks. We are very excited to sponsor our first event in Mexico.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Not sure if your event applies or you have questions related to organizing events? You can reach us at &lt;a href=&quot;mailto:hello@defna.org&quot;&gt;hello@defna.org&lt;/a&gt;. We’ll be happy to help!&lt;/strong&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 10 Feb 2015 00:00:00 -0600</pubDate>
-        <link>http://localhost:4000/stop-thinking-and-start-doing</link>
-        <guid isPermaLink="true">http://localhost:4000/stop-thinking-and-start-doing</guid>
+        <pubDate>Mon, 10 Sep 2018 03:50:28 -0500</pubDate>
+        <link>http://localhost:4000/semester-grants-report</link>
+        <guid isPermaLink="true">http://localhost:4000/semester-grants-report</guid>
         
-        
-        <category>motivation</category>
-        
-        <category>storytime</category>
         
       </item>
     
       <item>
-        <title>A Great Story Never Told</title>
-        <description>&lt;p&gt;I’ve never told this to anyone. Sit yourself down and strap yourself in, you will experience some turbulence before you reach a steady altitude.&lt;/p&gt;
+        <title>Join DEFNA! Board Member Recruitment</title>
+        <description>&lt;p&gt;Django Events Foundation North America (DEFNA) is looking for another board member. Last year we expanded our board from three members to seven; this year one of our board members, Stacey Haysler, is stepping down. We are looking for a new board member, possibly someone interested in being our new Corporate Secretary, who manages the official records of the nonprofit.&lt;/p&gt;
 
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam nihil eum cum quas! Consectetur aliquam molestias quos voluptatum recusandae accusantium eaque sed architecto esse. Ut obcaecati, porro numquam sed. Odio.&lt;/p&gt;
+&lt;p&gt;Board membership takes, on average, about five hours per month performing the following functions:&lt;/p&gt;
 
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quam provident accusamus vero autem culpa illum quo enim maiores eius error, sapiente inventore cum hic earum. Libero porro quisquam harum.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Attend the monthly board meeting&lt;/li&gt;
+  &lt;li&gt;Manage DEFNA 501(c)(3) charitable organization and a registered California corporation&lt;/li&gt;
+  &lt;li&gt;Participate in the grant applications review process&lt;/li&gt;
+  &lt;li&gt;Use DEFNA’s social media channels to communicate about DEFNA&lt;/li&gt;
+  &lt;li&gt;Come up with new and clever ways for DEFNA to fulfill our mission&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/img/post-assets/iceland.jpg&quot; alt=&quot;iceland&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;If you’d like to be considered for the board, drop us a note at hello@defna.org, and let us know:&lt;/p&gt;
 
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam nihil eum cum quas! Consectetur aliquam molestias quos voluptatum recusandae accusantium eaque sed architecto esse. Ut obcaecati, porro numquam sed. Odio.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;What interests you about being on the board&lt;/li&gt;
+  &lt;li&gt;Your current/prior community involvement (it’s okay if you’re new—we need everyone to participate!)&lt;/li&gt;
+  &lt;li&gt;Any particular interests you have (grants committee, corporate filings, corporate secretary, etc.)&lt;/li&gt;
+  &lt;li&gt;Any ideas you have for expanding DEFNA’s reach in the OSS community&lt;/li&gt;
+  &lt;li&gt;Anything else you’d like us to know about you as a potential board member&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quam provident accusamus vero autem culpa illum quo enim maiores eius error, sapiente inventore cum hic earum. Libero porro quisquam harum.&lt;/p&gt;
+&lt;p&gt;Please email your information to us by February 16 at 6:00 PM Pacific Time. We’ll contact you if we need more details. We’ll make our decision and reply to everyone by end-of-day February 26.&lt;/p&gt;
 
+&lt;p&gt;Read more about DEFNA’s involvement with DjangoCon US in our &lt;a href=&quot;https://www.defna.org/announcements/2017/04/03/join-us&quot;&gt;past board member recruitment post&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 10 Feb 2015 00:00:00 -0600</pubDate>
-        <link>http://localhost:4000/a-great-story-never-told</link>
-        <guid isPermaLink="true">http://localhost:4000/a-great-story-never-told</guid>
+        <pubDate>Tue, 23 Jan 2018 02:50:28 -0600</pubDate>
+        <link>http://localhost:4000/join-defna-board-member-recruitment</link>
+        <guid isPermaLink="true">http://localhost:4000/join-defna-board-member-recruitment</guid>
         
-        
-        <category>storytime</category>
-        
-        <category>life</category>
-        
-        <category>journey</category>
         
       </item>
     
       <item>
-        <title>You Dont Have To Be Great To Get Started</title>
-        <description>&lt;p&gt;It was a cold December morning, as I sat out on my porch I decided today was the day.&lt;/p&gt;
+        <title>DjangoCon US 2018 in San Diego</title>
+        <description>&lt;p&gt;We are pleased to announce that the DjangoCon US 2018 conference will take place in San Diego, California from October 14-19, 2018!&lt;/p&gt;
 
-&lt;p&gt;Dreamcatcher cold-pressed American Apparel, post-ironic Carles Shoreditch craft beer Banksy PBR retro distillery before they sold out freegan asymmetrical kogi. Food truck Schlitz direct trade, deep v ethical yr sriracha mumblecore freegan. Tattooed occupy pork belly, letterpress typewriter cold-pressed viral swag farm-to-table flexitarian. +1 hashtag put a bird on it authentic. 3 wolf moon locavore Vice, normcore actually meggings leggings cornhole brunch. Four loko vinyl trust fund, Intelligentsia wolf Bushwick lo-fi sriracha. Deep v vegan forage selvage.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;October 14: Tutorials (Paid)&lt;/li&gt;
+  &lt;li&gt;October 15-17: Talks&lt;/li&gt;
+  &lt;li&gt;October 18-19: Sprints&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/img/post-assets/view.jpg&quot; alt=&quot;view&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;We have a lot of amazing things planned that we’ll announcing over the next few months. Until then, here’s what you can do to help!&lt;/p&gt;
 
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam nihil eum cum quas! Consectetur aliquam molestias quos voluptatum recusandae accusantium eaque sed architecto esse. Ut obcaecati, porro numquam sed. Odio.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Mark your calendars and help us spread the word!&lt;/li&gt;
+  &lt;li&gt;Start thinking about topics for when our Call for Proposals is announced.&lt;/li&gt;
+  &lt;li&gt;Follow us on &lt;a href=&quot;https://twitter.com/djangocon&quot;&gt;@DjangoCon&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/defnado&quot;&gt;@defnado&lt;/a&gt; on Twitter.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;mailto:sponsors@djangocon.us&quot;&gt;Sponsor the event&lt;/a&gt;!&lt;/li&gt;
+  &lt;li&gt;Want to help by becoming an &lt;a href=&quot;mailto:hello@djangocon.us&quot;&gt;organizer&lt;/a&gt;?&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Dreamcatcher cold-pressed American Apparel, post-ironic Carles Shoreditch craft beer Banksy PBR retro distillery before they sold out freegan asymmetrical kogi. Food truck Schlitz direct trade, deep v ethical yr sriracha mumblecore freegan. Tattooed occupy pork belly, letterpress typewriter cold-pressed viral swag farm-to-table flexitarian. +1 hashtag put a bird on it authentic. 3 wolf moon locavore Vice, normcore actually meggings leggings cornhole brunch. Four loko vinyl trust fund, Intelligentsia wolf Bushwick lo-fi sriracha. Deep v vegan forage selvage.&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quam provident accusamus vero autem culpa illum quo enim maiores eius error, sapiente inventore cum hic earum. Libero porro quisquam harum.&lt;/p&gt;
-
+&lt;p&gt;Start working on those proposals, and we hope we’ll see you at DjangoCon US!&lt;/p&gt;
 </description>
-        <pubDate>Tue, 10 Feb 2015 00:00:00 -0600</pubDate>
-        <link>http://localhost:4000/you-dont-have-to-be-great-to-get-started</link>
-        <guid isPermaLink="true">http://localhost:4000/you-dont-have-to-be-great-to-get-started</guid>
+        <pubDate>Thu, 02 Nov 2017 02:50:28 -0600</pubDate>
+        <link>http://localhost:4000/djangocon-us-2018-in-san-diego</link>
+        <guid isPermaLink="true">http://localhost:4000/djangocon-us-2018-in-san-diego</guid>
         
         
-        <category>motivation</category>
+      </item>
+    
+      <item>
+        <title>Call for Proposals for DjangoCon 2018 Website!</title>
+        <description>&lt;p&gt;&lt;strong&gt;Updated:&lt;/strong&gt; October 31st, 2017 to extend our CFP deadline.&lt;/p&gt;
+
+&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Prior to 2017, DjangoCon US websites were built using Django. DEFNA decided to take a different approach for the 2017 conference. The website was built using the static site generator Jekyll and hosted on GitHub. There are a number of advantages to this approach:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Much of the website layout code can be reused from year to year&lt;/li&gt;
+  &lt;li&gt;New designs can be implemented more quickly and easily&lt;/li&gt;
+  &lt;li&gt;Website documentation is more easily maintained&lt;/li&gt;
+  &lt;li&gt;The number of contributions and contributors has drastically increased&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;technical-specifications&quot;&gt;Technical Specifications&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;The 2017 DjangoCon US website currently uses the following software tools:
+    &lt;ul&gt;
+      &lt;li&gt;Hosted on Github Pages (using Jekyll static site generator)&lt;/li&gt;
+      &lt;li&gt;Foundation responsive design framework&lt;/li&gt;
+      &lt;li&gt;Sass CSS extension language&lt;/li&gt;
+      &lt;li&gt;Gulp to compile for production&lt;/li&gt;
+      &lt;li&gt;npm for installation of front end dependencies&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here is the link to the DjangoCon US 2017 website repo, including README documentation: &lt;a href=&quot;https://github.com/djangocon/2017.djangocon.us/&quot;&gt;https://github.com/djangocon/2017.djangocon.us/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;going-forward&quot;&gt;GOING FORWARD&lt;/h3&gt;
+&lt;p&gt;We want to build off what we started in 2017 but improve on what we have. Our main goal for 2018 &lt;a href=&quot;https://github.com/djangocon/2018.djangocon.us&quot;&gt;(repo here)&lt;/a&gt; is to update our color scheme, logos, and &lt;a href=&quot;https://2017.djangocon.us/styleguide/&quot;&gt;style guide&lt;/a&gt; to fit the theme of the new city that we select.&lt;/p&gt;
+
+&lt;p&gt;We have all of our 2017 data to work with which includes all of our content along with our speakers and schedule (talks, tutorials, and sprint information) which can be used to verify and test with.&lt;/p&gt;
+
+&lt;p&gt;We’d also like your help finishing the layout for our Why DjangoCon US page which we use to help market to employees who wish to get their companies/bosses on board with attending DjangoCon US. See here: &lt;a href=&quot;https://2017.djangocon.us/why-djangocon-us/&quot;&gt;https://2017.djangocon.us/why-djangocon-us/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, we’d like your help with our swag and art direction which includes our backdrops during the conference, videos, signage, along with special swag which we give out at the conference.&lt;/p&gt;
+
+&lt;h2 id=&quot;2017-deliverables&quot;&gt;2017 Deliverables.&lt;/h2&gt;
+
+&lt;p&gt;DjangoCon US will need:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A configurable landing page with:
+    &lt;ul&gt;
+      &lt;li&gt;City and date information (This should also have a “coming soon” option)&lt;/li&gt;
+      &lt;li&gt;A marketing teaser&lt;/li&gt;
+      &lt;li&gt;Link to sponsorship info&lt;/li&gt;
+      &lt;li&gt;Link to our code of conduct&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Updated website design including city design, color scheme, logos, and updated style guide.&lt;/li&gt;
+  &lt;li&gt;Ideas and art direction for our swag and signage&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;defna-will-provide&quot;&gt;DEFNA WILL PROVIDE&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;City and date information&lt;/li&gt;
+  &lt;li&gt;Sponsorship submission form hosted through third-party&lt;/li&gt;
+  &lt;li&gt;Landing page copy&lt;/li&gt;
+  &lt;li&gt;The 2017 website which shows a complete and working implementation of what we are looking for&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;2018-deliverables&quot;&gt;2018 Deliverables&lt;/h2&gt;
+
+&lt;p&gt;Delivery of the full website design&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Responsive design that supports mobile, tablet, and desktop devices&lt;/li&gt;
+  &lt;li&gt;Accessibility and usability features
+DjangoCon US organizers and open-source community members will provide additional support for integration of the design.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;tentative-schedule&quot;&gt;Tentative Schedule&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Landing page launch: December 2017&lt;/li&gt;
+  &lt;li&gt;Website design complete: January 2018&lt;/li&gt;
+  &lt;li&gt;Initial site launch: January 2018&lt;/li&gt;
+  &lt;li&gt;Swag completion: February 2018&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;cfp-timeline&quot;&gt;CFP Timeline&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Call for proposals opens: October 12, 2017&lt;/li&gt;
+  &lt;li&gt;Deadline to submit proposal: —October 31, 2017— Extended to: November 14, 2017&lt;/li&gt;
+  &lt;li&gt;Decision: —November 15, 2017— Extended to: November 28th.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;submission-instructions&quot;&gt;Submission Instructions&lt;/h2&gt;
+&lt;p&gt;Please provide an electronic copy of your submission to our email address &lt;a href=&quot;maitlo:hello@defna.org&quot;&gt;hello@defna.org&lt;/a&gt;. You can also email any questions that you have to our email address.&lt;/p&gt;
+
+&lt;p&gt;We look forward to hearing from you!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 12 Oct 2017 03:50:28 -0500</pubDate>
+        <link>http://localhost:4000/call-for-proposals-for-djangocon-2018-website</link>
+        <guid isPermaLink="true">http://localhost:4000/call-for-proposals-for-djangocon-2018-website</guid>
         
-        <category>leadership</category>
         
-        <category>journey</category>
+      </item>
+    
+      <item>
+        <title>The Joys of Catering, Part 1: Tickets Sold Does Not Equal Catering Count</title>
+        <description>&lt;p&gt;The first challenge with conference catering is figuring out how many people you are actually going to feed. While ticket sales are part of that equation, there are actually a number of moving parts that will give you a final number that is unlikely to match the number of tickets sold.&lt;/p&gt;
+
+&lt;p&gt;While there is a certain mathematical component to figuring headcount, there’s also an art that doesn’t fit quite so neatly into a formula. Once you have done this a few times, or if you work with the same conference and/or caterer year to year, you develop an intuitive sense about how to adjust the headcount to fit the audience.&lt;/p&gt;
+
+&lt;p&gt;I’m going to use nice, round numbers for this example to keep the math simple. Substitute your own numbers as needed!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Adding up:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;For our hypothetical conference, we’ve sold 450 tickets. Go, us!&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If your conference sells tickets on the day of the event, add in your historical rate. If you don’t know that number, use 2% of Tickets Sold.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Next, look at your ticket sales: does that number include conference staff/volunteers, the outside A/V team you’ve hired, or other people who are working the conference? If not, count them up, and add that number.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Some conferences do a “plus-one” ticket, which allows the spouse/partner/significant other of an attendee to partake of meals and breaks. If that number isn’t included in Tickets Sold, add that in as well. If you do not offer such a ticket, you need to decide how to enforce the “attendees only” rule at breaks and meals. For the conferences I work, we require everyone to wear their badge when entering the food service area—pleasantly uncomplicated and efficient.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ask the caterer what number they plan for. Most caterers buffer 2% - 3% so that they don’t run out of food, but also don’t end up with piles of leftovers.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Lastly, is there anyone else who is going to show up and expect to be fed? Perhaps the CEO of your Super-Premium-Top-Tier-Biggest Sponsor. Who “forgot” to register, and the company used all their tickets already. Are you really going to tell them they can’t have coffee? (The answer here is “no”, in case you were wondering.) This is where the caterer’s overage comes in handy. You should have only one or two of these people. If you have more than that, take a look at your registration and sponsorship policies for next year—something is definitely out of alignment.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Subtracting out:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Most conferences have a 1% - 3% no-show rate. I’ve worked conferences where the no-show rate has been as high as 8% - 10%, but those are outliers. If you know the historical no-show rate for your conference, use that number; otherwise, use 3%.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;There are always a few people who don’t eat the conference food, no matter what is on the menu. They just don’t. If you have historical numbers, go with that. Otherwise, 1% - 2% is a workable estimate.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If the venue has other food options, for example, the venue has a casual restaurant, or a great sushi bar, or a line of food trucks outside the front door, you’re going to lose people to those other options. Additionally, if there’s a treasured local eatery within two blocks of the venue, some people will go there for lunch. If you have any of these situations, take off another 3%.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Here’s our hypothetical conference:&lt;/p&gt;
+
+&lt;p&gt;Tickets Sold: 450
+Walk-Ins: 10
+Staff and Volunteers: 5
+Plus-One Tickets (if not included in Tickets Sold): 20
+Unexpected Guests: 2
+Total In: 487&lt;/p&gt;
+
+&lt;p&gt;No-shows at 3%: -15
+Not eating at 3% -15
+Other options at 3%: -15
+Total out: -45&lt;/p&gt;
+
+&lt;p&gt;Total In - Total Out = Initial Adjusted Headcount: 487 - 45 = 442&lt;/p&gt;
+
+&lt;p&gt;If you quote the caterer a headcount of 442, and they plan a 3% overage, they will cater for 455.&lt;/p&gt;
+
+&lt;p&gt;If you’re concerned about costs, you can make an additional headcount adjustment. Most caterers allot a generous amount of food per person, so you could adjust your total downward between 3% and 5% and come out alright. I’ve adjusted as much as 10% for some events, based on a decrease in ticket sales from the prior year.&lt;/p&gt;
+
+&lt;p&gt;Additional 3%: 442 - 13 = 429 headcount, caterer sets for 442, your original headcount&lt;/p&gt;
+
+&lt;p&gt;Additional 5%: 442 - 22 = 420 headcount, caterer sets for 432, 10 fewer than your original headcount, which is still a workable margin&lt;/p&gt;
+
+&lt;p&gt;Additional 10%: 442 - 44 = 398 headcount; caterer sets for 410. We’re getting edgy here; I would go this low only if attendees had a number of other options, because you may end up taking a few people out for pizza or something if the food runs out.&lt;/p&gt;
+
+&lt;p&gt;For a real world example, a conference I ran a few years ago had a total adjusted headcount of 450. The caterer set a 3% buffer, so a headcount of 450 would be set for 463.&lt;/p&gt;
+
+&lt;p&gt;The conference had not kept records, so we had no historical numbers to compare. Purely on intuition, I gave the caterer a headcount of 420, which meant they set for 433. The actual count through the lunch area each day varied from 421 - 428; no one went hungry, and the caterer ran well under their 3% waste goal. So dropping the headcount that additional 6% worked out almost exactly. I don’t have a solid reason why I chose the 420 as the final number; it just seemed right, and, as it turned out, it was!&lt;/p&gt;
+
+&lt;p&gt;Again, though it’s not a hard science, the numbers are a solid start. The Initial Adjusted headcount can also be your end point as a more cautious approach, rather than going with the additional adjustments. If you’re not sure where to start, use the formula above to derive the Initial Adjusted Headcount for the caterer, and then make adjustments each subsequent year, based on experience.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 01 Aug 2017 03:50:28 -0500</pubDate>
+        <link>http://localhost:4000/the-joys-of-catering-part-1</link>
+        <guid isPermaLink="true">http://localhost:4000/the-joys-of-catering-part-1</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Welcome New Board Members</title>
+        <description>&lt;p&gt;The DEFNA board is excited to announce our expansion and the addition of our four new board members. We are excited to see what our new members accomplish. Here is some information about each of them. Please help us in welcoming them!&lt;/p&gt;
+
+&lt;h3 id=&quot;heather-luna&quot;&gt;HEATHER LUNA&lt;/h3&gt;
+&lt;p&gt;Heather Luna also affectionately known as Heats is the Sponsorship Chair for DjangoCon US. Her day job is a Systems Administrator at the Wharton School of Business. Heather fell in love with Python and Django after DjangoCon US came to Philadelphia in 2016. Her goal is now to combine her love of systems administration with her new love of development. She is committed to furthering and supporting women in technology and supporting diversity and inclusion for all.&lt;/p&gt;
+
+&lt;h3 id=&quot;katherine-kati-michel&quot;&gt;KATHERINE “KATI” MICHEL&lt;/h3&gt;
+&lt;p&gt;In addition to being the DjangoCon US Website Chair, Kati can often be found working on special projects for the United Methodist Church. She is a project manager, designer, and developer who enjoys following the latest tech trends, learning, and teaching others. In her free time, she enjoys traveling, eating good food, and listening to music.&lt;/p&gt;
+
+&lt;h3 id=&quot;kojo-idrissa&quot;&gt;KOJO IDRISSA&lt;/h3&gt;
+&lt;p&gt;A recovering former accountant with an MBA, Kojo taught accounting and MIS at the university level in the US and China. He’s also worked for non-profits, two Big 4 Public Accounting firms and been a 1-person business.&lt;/p&gt;
+
+&lt;p&gt;After changing careers, he’s currently doing QA for a startup on a web-based product. He’s also trying to learn to be a better software engineer, Pythonista and Djangonaut.&lt;/p&gt;
+
+&lt;p&gt;He likes community building and outreach, improving inclusion, helping new members of the community “get comfortable” &amp;amp; make contributions, and generally being helpful.&lt;/p&gt;
+
+&lt;h3 id=&quot;monique-murphy&quot;&gt;MONIQUE MURPHY&lt;/h3&gt;
+&lt;p&gt;Monique started using Django as a developer for the University of Texas at Austin. She is currently a developer for ApplyTexas (also in Austin). She has too many hobbies to list, but is a linguist and passionate foreign language enthusiast, karaoker, aspiring comic artist, and avid reader of any and all things words.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 20 Jul 2017 03:50:28 -0500</pubDate>
+        <link>http://localhost:4000/welcome-new-board-members</link>
+        <guid isPermaLink="true">http://localhost:4000/welcome-new-board-members</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Two Weeks Left to Submit DjangoCon Venue Proposals for 2018 and 2019!</title>
+        <description>&lt;p&gt;We wrote to you in May that we are accepting proposals for DjangoCon venues for 2018 and 2019 and that we need your help in making that decision! We are accepting proposals through the end of the month. The deadline is July 31, 2017.&lt;/p&gt;
+
+&lt;p&gt;To recap, here’s what you need to know and what we need to know, to consider your proposal:&lt;/p&gt;
+
+&lt;p&gt;We are looking at two possible ranges of conference dates: &lt;em&gt;mid-July through mid-August or late-September (after Yom Kippur) through mid-October&lt;/em&gt;. We need to avoid major holidays like Labor Day and Yom Kippur, the start of the school year, and the busiest summer months.&lt;/p&gt;
+
+&lt;p&gt;We’re also considering having the conference location change every two years, instead of every year, to make planning travel easier for our attendees.&lt;/p&gt;
+
+&lt;p&gt;We need some information about your city, possible venues, hotels, and travel. Your proposal doesn’t have to be super-fancy, but it does need to be informative. If you are interested in submitting a proposal, please see our &lt;a href=&quot;https://www.defna.org/announcements/2017/5/10/djangocon-us-call-for-venue-proposal-2018-and-2019&quot;&gt;DjangoCon US: Call for Venue Proposal 2018 and 2019&lt;/a&gt; for more details.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 19 Jul 2017 03:50:28 -0500</pubDate>
+        <link>http://localhost:4000/two-weeks-left-to-submit-djangocon-venue-proposals-for-2018-and-2019</link>
+        <guid isPermaLink="true">http://localhost:4000/two-weeks-left-to-submit-djangocon-venue-proposals-for-2018-and-2019</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>DjangoCon US: Call for Venue Proposal 2018 and 2019</title>
+        <description>&lt;p&gt;We’re almost ready for DjangoCon US 2017, so it’s time to think about 2018 and possibly 2019! Where will we be next year? Where will be for the next two years? We need your help in making that decision!&lt;/p&gt;
+
+&lt;p&gt;So you want your city to host DjangoCon US! Hurrah! We’re delighted by your interest. Here’s what you need to know, and what we need to know, to consider your proposal.&lt;/p&gt;
+
+&lt;p&gt;We are looking at two possible ranges of conference dates: &lt;em&gt;mid-July through mid-August or late-September (after Yom Kippur) through mid-October&lt;/em&gt;. We need to avoid major holidays like Labor Day and Yom Kippur, the start of the school year, and the busiest summer months.&lt;/p&gt;
+
+&lt;p&gt;We’re also considering having the conference location change every two years, instead of every year, to make planning travel easier for our attendees.&lt;/p&gt;
+
+&lt;p&gt;We need some information about your city, possible venues, hotels, and travel. Your proposal doesn’t have to be super-fancy, but it does need to be informative. The proposal should include the following:&lt;/p&gt;
+
+&lt;h3 id=&quot;organizers&quot;&gt;ORGANIZERS&lt;/h3&gt;
+&lt;p&gt;Names of organizers staffing the host city. While DEFNA will handle the business aspects of the conference, we need the help of a team of local volunteers to manage preparation and the onsite coordination of the event. We realize you won’t have an entire team assembled, but let us know who the core organizers in your city will be.&lt;/p&gt;
+
+&lt;h3 id=&quot;venues&quot;&gt;VENUES&lt;/h3&gt;
+&lt;p&gt;A short list of possible conference venues (or just one, if you have found the Venue of Conference Dreams), with the following information:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Name&lt;/li&gt;
+  &lt;li&gt;Location&lt;/li&gt;
+  &lt;li&gt;Transportation options (how do people get there from the airport?)&lt;/li&gt;
+  &lt;li&gt;Attendance capacity&lt;/li&gt;
+  &lt;li&gt;Layout of function space:
+    &lt;ul&gt;
+      &lt;li&gt;Keynote room (also Sessions Track A) to accommodate up to 450 people, classroom style (tables with chairs)&lt;/li&gt;
+      &lt;li&gt;Room for Sessions Track B to accommodate up to 200 people, classroom style (tables with chairs)&lt;/li&gt;
+      &lt;li&gt;Optional: Room for Sessions Track C to accommodate up to 150 people, classroom style (tables with chairs)&lt;/li&gt;
+      &lt;li&gt;Space for sponsors to set up exhibit booths/tables; at least 12, and up to 16, sponsors with either 6’ tables or 10’ x 10’ booth spaces. If more sponsor booth space is available, that’s a plus.&lt;/li&gt;
+      &lt;li&gt;Green room for speakers to prepare (generally a room that will seat 25 for a workshop is the right size)&lt;/li&gt;
+      &lt;li&gt;Quiet room for giving attendees a place to get away from the conference noise (capacity 25 - 50). Set with tables and chairs; round catering-style tables are workable.&lt;/li&gt;
+      &lt;li&gt;Location of registration tables&lt;/li&gt;
+      &lt;li&gt;Location of meals and breaks with sufficient seating and tables. If serving and/or seating areas cannot accommodate 450 people at once, indicate the room capacity and timing to move 450 people through.&lt;/li&gt;
+      &lt;li&gt;Location of supplemental beverage stations for daylong service.&lt;/li&gt;
+      &lt;li&gt;Secure overnight storage for vendor booth supplies and conference registration desk items.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;catering&quot;&gt;CATERING&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Tutorials day—100 people: Breakfast, morning break, lunch, afternoon break, and all day beverage service. (All day beverage service includes water stations, coffee, assorted black and herbal teas, and a variety of soft drinks.)&lt;/li&gt;
+  &lt;li&gt;Main conference, 3 days—450 people per day: Breakfast, morning break, lunch, afternoon break, and all day beverage service.&lt;/li&gt;
+  &lt;li&gt;Sprints, 2 days—75 people each day: Breakfast, morning break, lunch, afternoon break, and all day beverage service.&lt;/li&gt;
+  &lt;li&gt;Catering must have options for vegetarians and vegans &lt;strong&gt;of equal quality and variety as main menu&lt;/strong&gt;. Estimate 15% vegetarian and 5% vegan.&lt;/li&gt;
+  &lt;li&gt;Catering must label food appropriately so that our attendees are aware of allergens. Attendees should not have to guess if a dish is gluten free or contains tree nuts.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;costs&quot;&gt;COSTS&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;We need costs for:
+    &lt;ul&gt;
+      &lt;li&gt;Function space&lt;/li&gt;
+      &lt;li&gt;Catering&lt;/li&gt;
+      &lt;li&gt;Audio-visual services&lt;/li&gt;
+      &lt;li&gt;Any other fees or costs the venue requires.&lt;/li&gt;
+      &lt;li&gt;Pricing breakdown for a one year contracts vs. a two year contract.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;what-makes-a-good-conference-venue&quot;&gt;WHAT MAKES A GOOD CONFERENCE VENUE?&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;A good conference venue is/has the following:
+    &lt;ul&gt;
+      &lt;li&gt;Easy to reach from the airport and the conference hotel&lt;/li&gt;
+      &lt;li&gt;Free parking if a car is required for access&lt;/li&gt;
+      &lt;li&gt;The ability to serve lunch to 350—450 people in a 90 minute window.&lt;/li&gt;
+      &lt;li&gt;Most venues require use of their in-house catering service. If the venue does not offer catering services, check whether the venue restricts catering access to an approved vendor list, and what, if any, requirements they have for outside catering vendors.&lt;/li&gt;
+      &lt;li&gt;Adjoins or within walking distance to a suitable hotel which can accommodate 350-450 attendees&lt;/li&gt;
+      &lt;li&gt;Excellent Internet connectivity&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://modelviewculture.com/pieces/organizing-more-accessible-tech-events&quot;&gt;Accessible&lt;/a&gt; to as many attendees as possible. Things to think about: gender-neutral restrooms, space to walk service animals, lactation rooms, step-free access from the parking lot to the presentation area.&lt;/li&gt;
+      &lt;li&gt;Reasonable access to transit for sightseeing&lt;/li&gt;
+      &lt;li&gt;The venue does not have to be a hotel or corporate conference center. Many universities offer conference services, and there are also municipal/county level event venues which can be likely sites for DjangoCon US.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;sprint-venues&quot;&gt;SPRINT VENUES&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;A short list of possible sprint venues, which may be the conference venue, with the following information:
+    &lt;ul&gt;
+      &lt;li&gt;Name&lt;/li&gt;
+      &lt;li&gt;Location&lt;/li&gt;
+      &lt;li&gt;Transportation options&lt;/li&gt;
+      &lt;li&gt;Attendance capacity&lt;/li&gt;
+      &lt;li&gt;Cost of function space, catering, and audio-visual services. Sprints are often hosted by local companies as sponsorship of the event, which is preferable, as it saves the cost of renting a venue.&lt;/li&gt;
+      &lt;li&gt;Pricing breakdown for a one-year contract vs. a two-year contract.&lt;/li&gt;
+      &lt;li&gt;A good sprint venue is/has the following:
+        &lt;ul&gt;
+          &lt;li&gt;Easy to reach from the conference hotel&lt;/li&gt;
+          &lt;li&gt;Free parking if a car is required for access&lt;/li&gt;
+          &lt;li&gt;A room to hold 50-75 people, with work tables, chairs, power, and internet connectivity&lt;/li&gt;
+          &lt;li&gt;See catering requirements above. Eating tables should be separate from work tables if at all possible.&lt;/li&gt;
+          &lt;li&gt;Excellent Internet connectivity&lt;/li&gt;
+          &lt;li&gt;Accessible to as many attendees as possible&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;hotels&quot;&gt;HOTELS&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;The ideal hotel is adjacent to the conference venue, or a very short walk away. For the hotel, we need:
+    &lt;ul&gt;
+      &lt;li&gt;Name&lt;/li&gt;
+      &lt;li&gt;Location&lt;/li&gt;
+      &lt;li&gt;Transportation options&lt;/li&gt;
+      &lt;li&gt;The conference room rate (should be discounted from the standard rate)&lt;/li&gt;
+      &lt;li&gt;A block of rooms starting the two nights before tutorials, and running through the last night of the sprints. The breakdown of the room counts would be estimated at:
+        &lt;ul&gt;
+          &lt;li&gt;Saturday: 15&lt;/li&gt;
+          &lt;li&gt;Sunday Tutorials: 100&lt;/li&gt;
+          &lt;li&gt;Monday Main Conf: 100&lt;/li&gt;
+          &lt;li&gt;Tuesday Main Conf: 100&lt;/li&gt;
+          &lt;li&gt;Wednesday Main Conf: 80&lt;/li&gt;
+          &lt;li&gt;Thursday Sprints: 30&lt;/li&gt;
+          &lt;li&gt;Friday Sprints: 15&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;The block should include the guaranteed ability to add 20% more rooms for any given night if needed without moving to an overflow hotel.&lt;/li&gt;
+      &lt;li&gt;Concessions policy (comp room nights per actualized room nights)&lt;/li&gt;
+      &lt;li&gt;Pricing breakdown for a one year contracts vs. a two year contract.&lt;/li&gt;
+      &lt;li&gt;A sample contract showing the terms of booking the block of rooms. &lt;strong&gt;Again, do not sign any contracts. DEFNA will handle the business side of things&lt;/strong&gt;. We just need to see the terms the hotel proposes for the group block.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;potential-sponsors&quot;&gt;POTENTIAL SPONSORS&lt;/h3&gt;
+&lt;p&gt;Provide a list of possible local and regional companies that may be interested in sponsoring DjangoCon US.&lt;/p&gt;
+
+&lt;h3 id=&quot;everything-else&quot;&gt;EVERYTHING ELSE&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Provide estimates on costs associated with flights, accommodation, meals, ground transportation, etc. for an overview of total cost for attendees.&lt;/li&gt;
+  &lt;li&gt;Information about what makes the city a good choice for DjangoCon US and an attractive destination for attendees.&lt;/li&gt;
+  &lt;li&gt;Any additional ideas for making the event especially useful and/or memorable.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Since we are considering a number of proposals, &lt;strong&gt;no one from your group&lt;/strong&gt; should sign a binding contract or make any kind of legal or financial commitment.&lt;/p&gt;
+
+&lt;p&gt;If DEFNA chooses your group’s proposal, your group is responsible for putting DEFNA in contact with the venue management to finalize the event agreement.&lt;/p&gt;
+
+&lt;p&gt;Please submit your proposal no later than &lt;strong&gt;July 31, 2017&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Thanks so much! We look forward to hearing about all the fantastic places we can go next year!&lt;/p&gt;
+</description>
+        <pubDate>Wed, 10 May 2017 03:50:28 -0500</pubDate>
+        <link>http://localhost:4000/djangocon-us-call-for-venue-proposal-2018-and-2019</link>
+        <guid isPermaLink="true">http://localhost:4000/djangocon-us-call-for-venue-proposal-2018-and-2019</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>DEFNA Board Member Recruitment: Join US!</title>
+        <description>&lt;p&gt;Django Events Foundation North America (DEFNA) is looking for board members! If you’re looking for a way to participate in the Django community, this may be what you’re looking for!&lt;/p&gt;
+
+&lt;p&gt;DEFNA was founded to support Django professional and educational events in North America. Our main focus has been DjangoCon US, and we’re looking to expand our support to smaller regional and local events.&lt;/p&gt;
+
+&lt;p&gt;To do this, we need additional people to help manage DEFNA. Our current board members (who are also the founding members) are Jeff Triplett, Craig Bruce, and Stacey Haysler.&lt;/p&gt;
+
+&lt;p&gt;Specifically, we need people to:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Attend the monthly board meeting&lt;/li&gt;
+  &lt;li&gt;Manage DEFNA business: as a 501(c)(3) charitable organization and a registered California corporation, there are annual forms and filings to complete, monthly board records to maintain, etc. as well as the usual paying bills and other general business management tasks&lt;/li&gt;
+  &lt;li&gt;Participate in the grant applications review process&lt;/li&gt;
+  &lt;li&gt;Use DEFNA’s social media channels to communicate about DEFNA&lt;/li&gt;
+  &lt;li&gt;Come up with new and clever ways for DEFNA to fulfill our mission&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The day-to-day running of DjangoCon US is handled by our amazing team of volunteers. The DEFNA board is not involved in the day-to-day business; our job is to select the venue, manage the contracts, and provide direction to the organizers’ team. If you want to be part of the organizers’ team, that’s terrific—but it’s not required.&lt;/p&gt;
+
+&lt;p&gt;Board membership takes, on average, about five hours per month. You can put in more time if you want to be more involved, of course!&lt;/p&gt;
+
+&lt;p&gt;If you’d like to be considered for the board, drop us a note at hello@defna.org, and let us know:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;What interests you about being on the board&lt;/li&gt;
+  &lt;li&gt;Your current/prior community involvement (it’s okay if you’re new—we need everyone to participate!)&lt;/li&gt;
+  &lt;li&gt;Any particular interests you have (grants committee, corporate filings, etc.)&lt;/li&gt;
+  &lt;li&gt;Any ideas you have for expanding DEFNA’s reach in the OSS community&lt;/li&gt;
+  &lt;li&gt;Anything else you’d like us to know about you as a potential board member&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Please email your information to us by &lt;strong&gt;6:00 PM Pacific Time on April 28th&lt;/strong&gt;. We’ll contact you if we need more details.&lt;/p&gt;
+
+&lt;p&gt;We’ll make our decisions and reply to everyone on &lt;strong&gt;May 12th&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Thanks for your interest, and your support of DEFNA!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 04 Apr 2017 03:50:28 -0500</pubDate>
+        <link>http://localhost:4000/defna-board-member-recruitment-join-us</link>
+        <guid isPermaLink="true">http://localhost:4000/defna-board-member-recruitment-join-us</guid>
+        
         
       </item>
     

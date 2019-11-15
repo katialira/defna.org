@@ -1,0 +1,90 @@
+I"t<p><strong>Updated:</strong> October 31st, 2017 to extend our CFP deadline.</p>
+
+<h2 id="overview">Overview</h2>
+<p>Prior to 2017, DjangoCon US websites were built using Django. DEFNA decided to take a different approach for the 2017 conference. The website was built using the static site generator Jekyll and hosted on GitHub. There are a number of advantages to this approach:</p>
+
+<ul>
+  <li>Much of the website layout code can be reused from year to year</li>
+  <li>New designs can be implemented more quickly and easily</li>
+  <li>Website documentation is more easily maintained</li>
+  <li>The number of contributions and contributors has drastically increased</li>
+</ul>
+
+<h2 id="technical-specifications">Technical Specifications</h2>
+<ul>
+  <li>The 2017 DjangoCon US website currently uses the following software tools:
+    <ul>
+      <li>Hosted on Github Pages (using Jekyll static site generator)</li>
+      <li>Foundation responsive design framework</li>
+      <li>Sass CSS extension language</li>
+      <li>Gulp to compile for production</li>
+      <li>npm for installation of front end dependencies</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Here is the link to the DjangoCon US 2017 website repo, including README documentation: <a href="https://github.com/djangocon/2017.djangocon.us/">https://github.com/djangocon/2017.djangocon.us/</a></p>
+
+<h3 id="going-forward">GOING FORWARD</h3>
+<p>We want to build off what we started in 2017 but improve on what we have. Our main goal for 2018 <a href="https://github.com/djangocon/2018.djangocon.us">(repo here)</a> is to update our color scheme, logos, and <a href="https://2017.djangocon.us/styleguide/">style guide</a> to fit the theme of the new city that we select.</p>
+
+<p>We have all of our 2017 data to work with which includes all of our content along with our speakers and schedule (talks, tutorials, and sprint information) which can be used to verify and test with.</p>
+
+<p>We’d also like your help finishing the layout for our Why DjangoCon US page which we use to help market to employees who wish to get their companies/bosses on board with attending DjangoCon US. See here: <a href="https://2017.djangocon.us/why-djangocon-us/">https://2017.djangocon.us/why-djangocon-us/</a></p>
+
+<p>Finally, we’d like your help with our swag and art direction which includes our backdrops during the conference, videos, signage, along with special swag which we give out at the conference.</p>
+
+<h2 id="2017-deliverables">2017 Deliverables.</h2>
+
+<p>DjangoCon US will need:</p>
+
+<ul>
+  <li>A configurable landing page with:
+    <ul>
+      <li>City and date information (This should also have a “coming soon” option)</li>
+      <li>A marketing teaser</li>
+      <li>Link to sponsorship info</li>
+      <li>Link to our code of conduct</li>
+    </ul>
+  </li>
+  <li>Updated website design including city design, color scheme, logos, and updated style guide.</li>
+  <li>Ideas and art direction for our swag and signage</li>
+</ul>
+
+<h3 id="defna-will-provide">DEFNA WILL PROVIDE</h3>
+<ul>
+  <li>City and date information</li>
+  <li>Sponsorship submission form hosted through third-party</li>
+  <li>Landing page copy</li>
+  <li>The 2017 website which shows a complete and working implementation of what we are looking for</li>
+</ul>
+
+<h2 id="2018-deliverables">2018 Deliverables</h2>
+
+<p>Delivery of the full website design</p>
+<ul>
+  <li>Responsive design that supports mobile, tablet, and desktop devices</li>
+  <li>Accessibility and usability features
+DjangoCon US organizers and open-source community members will provide additional support for integration of the design.</li>
+</ul>
+
+<h2 id="tentative-schedule">Tentative Schedule</h2>
+<ul>
+  <li>Landing page launch: December 2017</li>
+  <li>Website design complete: January 2018</li>
+  <li>Initial site launch: January 2018</li>
+  <li>Swag completion: February 2018</li>
+</ul>
+
+<h2 id="cfp-timeline">CFP Timeline</h2>
+<ol>
+  <li>Call for proposals opens: October 12, 2017</li>
+  <li>Deadline to submit proposal: —October 31, 2017— Extended to: November 14, 2017</li>
+  <li>Decision: —November 15, 2017— Extended to: November 28th.</li>
+</ol>
+
+<h2 id="submission-instructions">Submission Instructions</h2>
+<p>Please provide an electronic copy of your submission to our email address <a href="maitlo:hello@defna.org">hello@defna.org</a>. You can also email any questions that you have to our email address.</p>
+
+<p>We look forward to hearing from you!</p>
+:ET
